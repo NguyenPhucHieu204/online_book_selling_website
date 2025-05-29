@@ -23,6 +23,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
+    /*chỗ này cần sửa lại*/
     public function down(): void
     {
         Schema::dropIfExists('contacts');
