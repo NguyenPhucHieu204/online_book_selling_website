@@ -22,6 +22,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
+    /*sss */
     public function down(): void
     {
         Schema::dropIfExists('categories');
