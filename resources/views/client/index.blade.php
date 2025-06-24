@@ -62,40 +62,40 @@
     </script>
     <!-- Kết thúc Phần Banner1 -->
 
-    <!-- Bắt đầu Phần Banner2 -->
+    <!-- Bắt đầu Phần Banner2 (gọn 1 dòng 3 ảnh) -->
     <section class="banner spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-7 offset-lg-4">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
                     <div class="banner__item">
                         <div class="banner__item__pic">
                             <img src="{{ asset('img/banner/banner1.jpg') }}" alt="Sách mới">
                         </div>
                         <div class="banner__item__text">
-                            <h2>Sách mới</h2>
+                            <h5>Sách mới</h5>
                             <a href="#">Khám phá ngay</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="banner__item banner__item--middle">
+                <div class="col-md-4 mb-4">
+                    <div class="banner__item">
                         <div class="banner__item__pic">
                             <img src="{{ asset('img/banner/banner2.jpg') }}" alt="Không gian đọc sách">
                         </div>
                         <div class="banner__item__text">
-                            <h2>Không gian đọc sách</h2>
+                            <h5>Không gian đọc sách</h5>
                             <a href="#">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="banner__item banner__item--last">
+                <div class="col-md-4 mb-4">
+                    <div class="banner__item">
                         <div class="banner__item__pic">
-                            <img src="{{ asset('img/banner/banner3.jpg') }}" alt="Tài liệu">
+                            <img src="{{ asset('img/banner/banner3.jpg') }}" alt="Đọc thử">
                         </div>
                         <div class="banner__item__text">
-                            <h2>Tài liệu</h2>
-                            <a href="#">Xem ngay</a>
+                            <h5>Đọc thử</h5>
+                            <a href="{{ route('proofread') }}">Xem ngay</a>
                         </div>
                     </div>
                 </div>

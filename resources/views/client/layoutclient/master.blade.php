@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="{{ asset('css/client/owl.carousel.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/client/slicknav.min.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/client/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/client/book.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/client/bookblock.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/client/normalize.css') }}" type="text/css">
         
 </head>
 <body>
@@ -65,6 +68,10 @@
     <script src="{{ asset('js/client/mixitup.min.js') }}"></script>
     <script src="{{ asset('js/client/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('js/client/main.js') }}"></script>
+    <script src="{{ asset('js/client/modernizr.custom.js') }}"></script>
+    <script src="{{ asset('js/client/bookblock.min.js') }}"></script>
+    <script src="{{ asset('js/client/classie.js') }}"></script>
+    <script src="{{ asset('js/client/bookshelf.js') }}"></script>
     
 </body>
 </html>

@@ -8,6 +8,7 @@ use \App\Http\Controllers\client\CartSessionController;
 use \App\Http\Controllers\client\OrderController;
 use \App\Http\Controllers\client\AboutController;
 use \App\Http\Controllers\client\ContactController;
+use \App\Http\Controllers\client\ProofreadController;
 
     Route::get('/',[IndexController::class, 'index'])->name('index');
     Route::get('/shop',[ProductController::class, 'shop'])->name('shop');
@@ -18,9 +19,12 @@ use \App\Http\Controllers\client\ContactController;
     Route::get('/cart/{id}/delete',[CartSessionController::class, 'removeFromCart'])->name('remove.cart');
     Route::get('/about',[ AboutController::class, 'index'])->name('about');
     Route::get('/contact',[ ContactController::class, 'index'])->name('contact');
+    Route::get('/proofread',[ ProofreadController::class, 'index'])->name('proofread');
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
